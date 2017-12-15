@@ -1,0 +1,175 @@
+/* ---------- GENERAL ---------- */
+* {
+  box-sizing: border-box;
+  cursor:url(cursor.png), auto;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: NeutraDisp;
+    src: url(NeutraDisp-Bold.otf);
+}
+
+body {
+  background: #0078C4;
+  background: -webkit-linear-gradient(to bottom, rgba(0,120,196,0.6) , rgba(131,34,137,0.6), rgba(242,157,0,0.6));
+  background: linear-gradient(to bottom, rgba(0,120,196,0.6) , rgba(131,34,137,0.6), rgba(242,157,0,0.6)); 
+  background-opacity:0.6;
+  height: 100vh;
+  margin: 0;
+  overflow: scroll;
+  border:0px solid;
+}
+
+.instruction{
+  color: white;
+  font-family: NeutraDisp;
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+button{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  text-align: center;
+  /*width: 100%;*/
+}
+
+.button {
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+
+.myImage{
+  text-align: right;
+}
+.predictResult{
+  font-family: NeutraDisp;
+  color: white;
+  font-size: 36pt;
+}
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 3% 0% 1% 1.6%;
+}
+/*.col:first-child { margin-left: 0; }*/
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+  width: 97%;
+}
+
+.span_11_of_12 {
+    width: 91.53%;
+}
+.span_10_of_12 {
+    width: 83.06%;
+}
+
+.span_9_of_12 {
+    width: 74.6%;
+}
+
+.span_8_of_12 {
+    width: 66.13%;
+}
+
+.span_7_of_12 {
+    width: 57.66%;
+}
+
+.span_6_of_12 {
+    width: 48.2%;
+}
+
+.span_5_of_12 {
+    width: 40.73%;
+}
+
+.span_4_of_12 {
+    width: 32.26%;
+}
+
+.span_3_of_12 {
+    width: 23.8%;
+}
+
+.span_2_of_12 {
+    width: 15.33%;
+}
+
+.span_1_of_12 {
+    width: 6.866%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {  margin: 1% 0 1% 0%; }
+    
+  .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+  width: 100%; 
+  }
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+@-webkit-keyframes animateBubble {
+    0% {
+        top: 100vh;
+    }
+    100% {
+        top: -100vh;
+    }
+}
+@-webkit-keyframes struggle { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  	<head>
+   	 	<title>FilterME - Test Your Filter Bubble</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    	<!-- <script type="text/javascript" src="index.js"></script> -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  	</head>
+  	<body>
+  		  <div id="mainButton">
+	  			  <div id="start">START</div>
+	  			  <a href="{{ url_for('page') }}"><img src="{{ url_for('static', filename='css/bubble.png') }}"></a>
+  		  </div>
+
+ 	  	 <div class="bubbles">
+          	<div class="bubble b1"></div>
+        </div>
+        <div id="instruction">What is your Filter Bubble?</div>
+    </body>
+</html>
